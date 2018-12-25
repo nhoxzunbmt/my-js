@@ -41,7 +41,7 @@ class iChild extends iParent {
     console.log('iChild ...', this.json);
 
   }
-  get All() {
+  getAll() {
     console.log('getAll ichild');
     return this.json
   }
@@ -57,6 +57,6 @@ class iChild extends iParent {
 
 var aI = new iChild('{a:1}')
 console.log(iChild.printData());
-// aI.All()
+aI.getAll()
 // aI.Data('{b : 3}')
 // aI.All()
